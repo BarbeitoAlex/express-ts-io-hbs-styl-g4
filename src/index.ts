@@ -1,6 +1,7 @@
-import ServerExpress from './server';
+import Server from './server';
+import setSockets from './socket/index';
 
-const express = new ServerExpress();
 const PORT: number = 3000;
-
+const express = new Server();
 express.listen(PORT);
+express.io = setSockets(express.io);
