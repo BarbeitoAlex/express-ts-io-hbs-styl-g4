@@ -4,7 +4,10 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "start": "tsc && node ./dist/index.js"
+    "start": "npm run build && npm run only-start",
+    "build": "tsc",
+    "only-start": "node ./dist/index.js",
+    "dev": "tsc-watch --onSuccess \"npm run only-start\""
   },
   "author": "BarbeitoAlex",
   "license": "MIT",
@@ -15,6 +18,7 @@
   "devDependencies": {
     "@types/express": "^4.16.0",
     "@types/node": "^10.12.18",
+    "tsc-watch": "^1.0.31",
     "typescript": "^3.2.4"
   }
 }
