@@ -24,7 +24,7 @@ gulp.task('stylus', function () {
         .pipe(stylus({
             compress: true
         }))
-        .pipe(gulp.dest('public/resource/css'));
+        .pipe(gulp.dest('public/resources/css'));
 });
 
 // Build
