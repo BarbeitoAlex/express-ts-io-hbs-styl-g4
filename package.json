@@ -7,7 +7,9 @@
     "start": "npm run build && npm run only-start",
     "build": "tsc",
     "only-start": "node ./dist/index.js",
-    "dev": "tsc-watch --onSuccess \"npm run only-start\""
+    "dev": "tsc-watch --onSuccess \"npm run only-start\"",
+    "gulp:start": "gulp watch",
+    "gulp:build": "gulp build"
   },
   "author": "BarbeitoAlex",
   "license": "MIT",
@@ -15,6 +17,10 @@
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "express-handlebars": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-nodemon": "^2.4.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-typescript": "^5.0.0",
     "socket.io": "^2.2.0"
   },
   "devDependencies": {
