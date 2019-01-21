@@ -29,8 +29,8 @@ gulp.task('start', gulp.series('build', function () {
 gulp.task('watch', gulp.series('start', function () {
     gulp.watch('src/*.ts')
     .on('change', gulp.series('build'))
-    .on('unlink', gulp.series('build'))
-}))
+    .on('unlink', gulp.series('build'));
+}));
 
 // Default
 gulp.task('default', gulp.series('watch'));
