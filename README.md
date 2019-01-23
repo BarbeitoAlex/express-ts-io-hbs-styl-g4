@@ -6,7 +6,8 @@ Template to make projects with these technologies.
 
 Install all the dependencies:
 ````shell
-npm install && npm install --only=dev
+npm install
+npm install --only=dev
 ````
 
 If you want to use the command with **gulp** and not npm install *gulp-cli* globally:

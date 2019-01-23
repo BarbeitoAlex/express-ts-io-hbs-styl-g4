@@ -12,7 +12,7 @@ export default class Server {
     private app: express.Application;
     private routes: Routes = new Routes();
     private http: http.Server | undefined;
-    public io: SocketIO.Server | undefined;
+    private io: SocketIO.Server | undefined;
 
     constructor(PORT: number) {
         this.app = express();
